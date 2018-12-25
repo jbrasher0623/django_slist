@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block sidebar %}
+ <ul>
+  <li><a href="/lists/all">Lists</a></li>
+ </ul>
+{% endblock %}
+
+{% block content %}
+
+  <h1>{{ list.date_purchased }}</h1>
+   <p>{{ list.count }}</p>
+   <p>{{ list.costPerItem }}</p>
+   <p>{{ list.totalCostItems }}</p>
+   <p>{{ list.amtDiscount }}</p>
+   <p>{{ list.percRateSalesTax }}</p>
+   <p>{{ list.amtSalesTax }}</p>
+   <p>{{ list.costTotal }}</p>
+
+{% endblock %}
